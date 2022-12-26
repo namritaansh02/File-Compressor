@@ -49,7 +49,6 @@ int main(){
         file.close();
     }
 
-
     string encodingFilePath = "C:/Users/Lenovo/OneDrive/Desktop/Software/FileCompression/ConsoleApp/HuffmanEncodingFile.txt";
     string compressedText;
     compressText(text, compressedText, encodingFilePath, HUFFMAN);
@@ -65,4 +64,7 @@ int main(){
 
     string decompressedText;
     decompressText(compressedText, decompressedText, encodingFilePath, HUFFMAN);
+
+    ofstream decompressedOut("C:/Users/Lenovo/OneDrive/Desktop/Software/FileCompression/ConsoleApp/DecompressedText.txt", ios::out);
+    decompressedOut << decompressedText;
 }

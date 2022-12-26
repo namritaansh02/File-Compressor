@@ -188,5 +188,4 @@ void decompressTextHUFFMAN(string& text, string& dText, string& decodingFilePath
     binaryText = binaryText.substr(zero_count, binaryText.size() - zero_count);
 
     convertBinaryTextHuffman(binaryText, dText, rootNode);
-    cout << dText << endl;
 }
